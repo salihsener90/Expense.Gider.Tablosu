@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<!-- baslık -->
+
+<h1 class="heading">Gider Tablosu</h1>
+
+<div class="container">
+    <h3 class="greet">
+        Hosgeldin,
+        <input type="text" id="user-input" placeholder="ad">
+        
+    </h3>
+
+
+    <!-- form alanı -->
+    <form action="">
+        <div class="double">
+            <div class="form-field">
+                <label for="name-input">Ürün adı </label>
+                <input id="name-input"  type="text">
+            </div>
+
+            <div class="form-field">
+                <label for="price-input">Fiyat </label>
+                <input id="price-input"  type="number">
+            </div>
+        </div>
+
+        <div class="double">
+            <div class="form-check-field">
+                <input id="status-check" type="checkbox">
+            <label for="status-check">ödendi</label>
+            </div>
+            <button id="add-btn">Ekle</button>
+        </div>
+
+    </form>
+
+    <!-- toplama alanı -->
+    <div class="sum">
+        toplam harcama <span id="sum-info">0</span> &#x20BA;
+    </div>
+
+    <!-- filtreleme -->
+    <select name="" id="select">
+        <option value="all">Hepsi</option>
+        <option value="paid">Ödenenler</option>
+        <option value="not-paid">Ödenmeyenler</option>
+    </select>
+
+    <div id="list">
+       
+    </div>
+</div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+# Expense.Gider.Tablosu
